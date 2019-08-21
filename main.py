@@ -123,7 +123,16 @@ def predictVsActuals(day):
     print("we were off by ", round(abs(precipActualValue-precipPredictValue), 3), "inches")
     print("\n")
 
-predictVsActuals(19550302)
+#predictVsActuals(19550302)
+#predictVsActuals(19880502)
+#predictVsActuals(19960815)
 
-predictVsActuals(19880502)
-predictVsActuals(19960815)
+
+def predictFuture(day):
+    
+    precipPredictValue = round(rf_model.predict(day)[0], 3)
+
+
+    print("We predicted",precipPredictValue, "inches of rainfall")
+
+    print("\n")

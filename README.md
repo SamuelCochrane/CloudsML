@@ -2,6 +2,7 @@
 ## Predicting the wheather with Python and Scikit
 
 
+
 bring in intial libraries we will need
 ```
  import numpy
